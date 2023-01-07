@@ -28,7 +28,7 @@ function App() {
         />
         <button
           onClick={() => {
-            dispatch(addUser({ id: 0, name: name, username: username }));
+            dispatch(addUser({ id: userList.length, name, username }));
             setName((state) => "");
             setUsername((state) => "");
           }}
